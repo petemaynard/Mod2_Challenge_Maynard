@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Pete Maynard Portfoilio</title>
+</head>
+
+<body>
+    <header> <!-- This is a flexbox.  The three rows below are the items in the flexbox.-->
+        <img class="pic" src="./assets/self5.jpg" alt="Image of Pete Maynard" />
+        <h1 class="name">Pete Maynard</h1>
+        <a class="golink" href="https://github.com/petemaynard" target="_blank">My Github</a>
+
+    </header>
+
+    <nav>
+        <ul> <!-- This is a flexbox -->
+            <li><a href="#hello">Who I am</a></li>
+            <li><a href="#latest">Projects</a></li>
+            <li><a href="#future">Upcoming Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section> <!-- Each "section" is a flexbox, with divs being the items in the flexbox -->
+            <a name="hello"></a>
+            <div class="col1">
+                <p>Hello</p>
+            </div>
+            <div class="col2-expand">
+                <p>I wish I had more time to write a better bit of text here but this will have to do for now.</p>
+                <p>I wish I had more time to write a better bit of text here but this will have to do for now.</p>
+                <p>I wish I had more time to write a better bit of text here but this will have to do for now.</p>
+                <p>I wish I had more time to write a better bit of text here but this will have to do for now.</p>
+            </div>
+        </section>
+
+        <section>
+            <a name="latest"></a>
+            <div class="col1">
+                <p>Latest Apps</p>
+            </div>
+            <div class="col2-expand">
+                <button>
+                    <a href="https://petemaynard.github.io/Mod2_Challenge_Maynard/" target="_build">
+                        <img class="opaque" src="./assets/big-pic.jpg" />
+                        <span class="box-descriptor-wide">My latest application, a portfolio</span>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <a name="future"></a>
+            <div class="col1">
+                <p>Future Apps</p>
+            </div>
+            <div class="col2">
+                <button>
+                    <a href="https://github.com/petemaynard" target="_build">
+                        <img class="opaque" src="./assets/small-pic1.jpg" width="200px"/>
+                        <span class="box-descriptor">Upcoming project placeholder 1</span>
+                    </a>
+                </button>
+            </div>
+            <div class="col3">
+                <button>
+                    <a href="https://github.com/petemaynard" target="_build">
+                        <img class="opaque" src="./assets/small-pic2.jpg" width="200px" />
+                        <span class="box-descriptor">Upcoming project placeholder 2</span>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <a name="contact"></a>
+            <div class="col1">
+                <p>Find me</p>
+            </div>
+            <div class="col2-expand">
+                <ul>
+                    <li>Phone: 612-555-1212</li>
+                    <li>Email: xerxespete@gmail.com</li>
+                    <li>LinkedIn: https://www.linkedin.com/in/pete-maynard/</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

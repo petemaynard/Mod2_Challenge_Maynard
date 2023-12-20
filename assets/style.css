@@ -1,0 +1,199 @@
+a {
+    text-decoration-line: none;
+    text-decoration-color: black;
+ 
+}
+
+body {
+    background-color: cadetblue;
+    border: 2px;
+    border-color: brown;
+}
+
+header {    /* This is a flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: grey;
+    border-style: solid;
+    border-color: black;
+
+}
+
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+}
+
+p {
+    margin:2px;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.opaque{
+    opacity:.2;
+}
+
+.pic {    /* Item in the "header" flexbox */
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.name {    /* Item in the "header" flexbox */
+    flex-grow: 3;
+    color: rgb(227, 288, 165);
+    align-self: flex-end;
+    padding: 5px;
+    border: 0px;
+    margin: 0px;
+}
+
+.golink {    /* Item in the "header" flexbox */
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+    align-self: flex-end;
+}
+
+nav ul {    /* This is a flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(227, 228, 165);
+    border-style: solid;
+    border: 2px;
+    border-color: brown;
+}
+
+nav ul li {    /* These are the items in the flexbox  of "nav ul"*/
+    flex: 1 0 100px;
+    margin: 3px;
+    padding: 3px;
+    }
+
+section {    /* This is a flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+div {    /* These are the items in the flexbox of "section" and "footer"*/
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    margin: 20px;;
+}
+
+.col1 {
+    font-size: 300%;
+    width: 200px;
+    border-style: solid;
+    border: 1px;
+    margin: 0px 0px 20px;
+    padding: 5px;
+    align-self: flex-end;
+    background-color: rgb(146, 73, 73);
+}
+
+.col2 {
+    flex: 2;
+    font-size: 100%;
+}
+
+.col2-expand {
+    flex: 4;
+}
+
+.col3 {
+    flex: 2;
+    font-size: 100%;
+}
+
+footer {    /* This is a flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+/* The user's cursor is positioned over the element */
+button:hover {
+    /*background-color: rgb(227, 228, 165);*/
+    color: #000;
+    opacity: .8;
+  }
+  
+  /* The user is actively pressing down on the element */
+  button:active {
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+  button:focus {
+    outline: none;
+    border-color: #8ac4ff;
+  }
+
+  .box-descriptor-wide {
+    position: relative;
+    bottom: 20px;
+    left: -800px;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: grey;
+    color: black;
+    height: 55px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .box-descriptor {
+    position: relative;
+    bottom: 20px;
+    left: -175px;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: grey;
+    color: black;
+    height: 55px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Change the header background */
+    header {
+      flex-direction: column;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      flex-direction: column;
+    }
+  }
+  
